@@ -1,9 +1,4 @@
-1. When the application is started, it immediately invoke "TestingData()" method that tests the models 
-(the different type of cards) with hardcoded parameters. Each type of card (Bronze, Silver or Gold) inherits base 
-class "Card".
-"Card" class is an abstract class that contains 3 properties (Owner, Turnover and DiscountRate). Derived classes 
-have to implement the abstract method "CalculateDiscountRate". Different classes have different implementations based 
-on their type. This method sets the value of "DiscountRate" property.
+1. When the application is started, it immediately invoke "TestingData()" method that tests the models (the different type of cards) with hardcoded parameters. Each type of card (Bronze, Silver or Gold) inherits base class "Card". "Card" class is an abstract class that contains 3 properties (Owner, Turnover and DiscountRate). Derived classes have to impleent the abstract method "CalculateDiscountRate". Different classes have different implementations based on their type. This method sets the value of "DiscountRate" property.
 
 2. "PayDesk" class is a static class with 3 methods: 
 "PrintInformation" method prints information on the console.
