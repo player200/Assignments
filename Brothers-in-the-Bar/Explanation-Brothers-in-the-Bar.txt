@@ -1,0 +1,11 @@
+1. The program will read the input, then will try to split the string and create a list of integers. If it cannot be 
+parsed to a list it will throw a message and let you type the input again untill it's in the write format.
+2. The program will start iterating through the list of glasses. There is a list of consecutiveDrinks that will be 
+our counter of current consecutive drinks in the list.
+3. After the iterating begins through the list there are 2 conditions, if the list of "consecutiveDrinks" is empty
+and when it have item/s. If it's empty we add the first item from "glasses" list to the "consecutiveDrinks" list.
+If it's not empty it checks if the current item in "glasses" is equal to the first item in
+"consecutiveDrinks" list, if it's not equal "consecutiveDrink" list is cleared and then add the current "glasses" 
+item in our empty "consecutiveDrinks" list. If it's equal, add the new item from the "glasses" list to the "consecutiveDrinks" list. Then if the "consecutiveDrinks" list count gets to 3 items, clear the "consecutiveDrinks" list, then remove the glasses that are consecutive in "glasses" list, incrementing the "countOfDrinkingRounds" and refreshing index of the loop to -1, restarting the loop. This proccess will continue untill it no longer satisfies the condition.
+
+4. At the end program prints the count of consecutive drinks that have been found.
